@@ -24,7 +24,7 @@ def register_routes(app, s):
         send_email(
             subject='Confirm Your Email',
             recipient=email,
-            body=f'Hello {username},\n\nPlease click the link to verify your email: {verification_link}'
+            body=f'Hello! {username}:),\n\nPlease click the link to verify your email: {verification_link}'
         )
 
         return jsonify({"message": "Verification email sent!"}), 200
