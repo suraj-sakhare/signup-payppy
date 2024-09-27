@@ -18,7 +18,7 @@ def register_routes(app, s):
         token = s.dumps(email, salt='email-confirm')
 
         # Create the verification link
-        verification_link = f'http://localhost:5000/verify/{token}'
+        verification_link = f'http://62.72.31.191:8080/verify/{token}'
 
         # Send verification email
         send_email(
